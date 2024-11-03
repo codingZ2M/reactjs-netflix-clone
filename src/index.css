@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Prata&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #0d0d00;
+  color: #ffffff;
+}
+a.active hr{
+    display: block;
+}
+
+.prata-regular {
+    font-family: "Prata", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+.outfit-paragraph {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@media (max-width:640px) {
+  a.active {
+    background-color: #0d0d00;
+    color: #f2f2eb
+  }
+}
+
+
+/* Minimal scrollbar styling for WebKit browsers (Chrome, Safari) */
+.scrollbar-custom::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.scrollbar-custom::-webkit-scrollbar-thumb {
+  background-color: #888; /* Thumb color */
+  border-radius: 10px;
+}
+
+.scrollbar-custom::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* Darken on hover */
+}
+
+/* Minimal styling for Firefox */
+.scrollbar-custom {
+  scrollbar-width: thin;           /* Makes scrollbar thin */
+  scrollbar-color: #888 transparent; /* thumb color | track color */
+}
+
