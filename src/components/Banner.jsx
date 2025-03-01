@@ -4,11 +4,24 @@ import { useEffect, useState } from 'react';
 function Banner() {
     const [movie, setMovie] = useState(null);
 
+<<<<<<< HEAD
     useEffect(() => {
         const fetchFeaturedMovie = async () => {
             const response = await fetch(`https://api.themoviedb.org/3/trending/movie/week?api_key=${import.meta.env.VITE_TMDB_API_KEY}`);
             const data = await response.json();
             setMovie(data.results[0]);
+=======
+    // Ref: https://www.codingz2m.com/post/react-fetch-api
+    useEffect(() => {
+        const fetchFeaturedMovie = async () => {
+        try {
+            const response = await fetch(`https://api.themoviedb.org/3/trending/movie/week?api_key=${import.meta.env.VITE_TMDB_API_KEY}`);
+            const data = await response.json();
+            setMovie(data.results[0]);
+        } catch (error) {
+            console.error("Error fetching movie:", error);
+        }
+>>>>>>> c1255dd (Function Update Pattern in the Context updated)
         };
         fetchFeaturedMovie();
     }, []);
