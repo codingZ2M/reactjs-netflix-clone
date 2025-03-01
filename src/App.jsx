@@ -1,9 +1,5 @@
 import React from 'react'
-<<<<<<< HEAD
-import { Route, Router, Routes } from 'react-router-dom'
-=======
 import { Route, Routes } from 'react-router-dom'
->>>>>>> c1255dd (Function Update Pattern in the Context updated)
 import NavBar from './components/NavBar'
 import Home from './pages/Home'
 import Movies from './pages/Movies'
